@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
 :root {
+  --colliers-navy: #002855;
+  --colliers-blue: #0057B8;
+  --colliers-red: #E31837;
+  --colliers-dark: #1C1C1C;
+  --colliers-gray: #666666;
+  --colliers-light: #F5F5F5;
+  --colliers-border: #E0E0E0;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1C1C1C;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-colliers-navy: var(--colliers-navy);
+  --color-colliers-blue: var(--colliers-blue);
+  --color-colliers-red: var(--colliers-red);
+  --color-colliers-dark: var(--colliers-dark);
+  --color-colliers-gray: var(--colliers-gray);
+  --color-colliers-light: var(--colliers-light);
+  --color-colliers-border: var(--colliers-border);
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* CRT Terminal Effect */
+.crt-terminal {
+  background: #0a0f0a;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.crt-terminal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+.crt-terminal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.35) 100%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.crt-text {
+  color: #33ff33;
+  text-shadow: 0 0 6px rgba(51, 255, 51, 0.4);
+}
+
+.crt-text-dim {
+  color: #1a8a1a;
+  text-shadow: 0 0 3px rgba(51, 255, 51, 0.2);
+}
+
+.crt-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.1em;
+  background: #33ff33;
+  animation: blink-cursor 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
