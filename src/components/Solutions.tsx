@@ -35,8 +35,8 @@ const mixed = {
   icon: Layers,
   tag: "MODEL MIESZANY",
   description:
-    "Połączenie dwóch formatów — np. private office + dodatkowe hot-deski lub sale spotkań.",
-  best: "liczba użytkowników jest zmienna, a nie wszystkie funkcje zespołu mają te same potrzeby.",
+    "Flex jako uzupełnienie najmu konwencjonalnego — np. biuro serwisowane dla części zespołu, satelitarne lokalizacje lub przestrzeń na czas przejściowy, podczas gdy główna siedziba działa w modelu tradycyjnym.",
+  best: "firma ma stabilną siedzibę, ale potrzebuje elastyczności w wybranych lokalizacjach, dla konkretnych zespołów lub na określony czas.",
   image:
     "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80",
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ClipboardList, MessageSquare, ArrowRight, ArrowLeft, Monitor, DoorOpen, Building2, Layers, Scale } from "lucide-react";
+import { ClipboardList, MessageSquare, ArrowRight, ArrowLeft, Monitor, DoorOpen, Building2, Scale } from "lucide-react";
 import Terminal from "./Terminal";
 import QuickContact from "./QuickContact";
 import {
@@ -46,7 +46,6 @@ const RESULT_ICONS: Record<string, React.ComponentType<{ className?: string }>> 
   hotdesk: Monitor,
   private: DoorOpen,
   dedicated: Building2,
-  mixed: Layers,
   compare: Scale,
 };
 

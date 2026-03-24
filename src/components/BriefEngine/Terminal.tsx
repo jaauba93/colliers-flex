@@ -5,7 +5,6 @@ import {
   Monitor,
   DoorOpen,
   Building2,
-  Layers,
   Scale,
   HelpCircle,
 } from "lucide-react";
@@ -15,7 +14,6 @@ const ICONS: Record<RecommendationType, React.ComponentType<{ className?: string
   hotdesk: Monitor,
   private: DoorOpen,
   dedicated: Building2,
-  mixed: Layers,
   compare: Scale,
   unknown: HelpCircle,
 };
@@ -24,8 +22,7 @@ const TYPE_LABELS: Record<RecommendationType, string> = {
   hotdesk: "Hot desk / Cowork",
   private: "Prywatny gabinet",
   dedicated: "Dedykowany moduł",
-  mixed: "Model mieszany",
-  compare: "Porównaj z najmem",
+  compare: "Rozważ tradycyjny najem",
   unknown: "",
 };
 
@@ -48,7 +45,7 @@ export default function Terminal({
   const showTwo =
     topRec &&
     secondRec &&
-    topRec.confidence - secondRec.confidence < 10 &&
+    topRec.confidence - secondRec.confidence < 15 &&
     hasEnoughData;
 
   const targetText = !hasEnoughData
@@ -122,12 +119,12 @@ export default function Terminal({
       {/* Confidence bars */}
       {hasEnoughData && recommendations.length > 0 && (
         <div className="relative z-10 mt-6 pt-4 border-t border-white/10 space-y-2">
-          {recommendations.slice(0, 3).map((rec) => {
+          {recommendations.slice(0, 4).map((rec) => {
             const RecIcon = ICONS[rec.type];
             return (
               <div key={rec.type} className="flex items-center gap-3">
                 <RecIcon className="w-3.5 h-3.5 text-white/40 shrink-0" />
-                <span className="text-[10px] text-white/40 w-24 truncate">
+                <span className="text-[10px] text-white/40 w-28 truncate">
                   {TYPE_LABELS[rec.type]}
                 </span>
                 <div className="flex-1 h-1 bg-white/10 overflow-hidden">
