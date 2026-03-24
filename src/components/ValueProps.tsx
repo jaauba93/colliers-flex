@@ -3,18 +3,21 @@ import { SlidersHorizontal, BarChart3, Handshake } from "lucide-react";
 const props = [
   {
     icon: SlidersHorizontal,
-    title: "Dopasowanie\nmodelu",
-    subtitle: "Nie tylko \u201Eznalezienie biura\u201D, ale wybór właściwego formatu zajęcia",
+    title: "Dopasowanie modelu",
+    subtitle:
+      "Nie tylko \u201Eznalezienie biura\u201D, ale wybór właściwego formatu zajęcia przestrzeni — od hot-desku po dedykowany moduł.",
   },
   {
     icon: BarChart3,
-    title: "Porównanie\nlike-for-like",
-    subtitle: "Analiza ofert poza samą stawką za stanowisko",
+    title: "Porównanie like-for-like",
+    subtitle:
+      "Analiza ofert poza samą stawką za stanowisko — z uwzględnieniem usług, warunków i elastyczności.",
   },
   {
     icon: Handshake,
-    title: "Wsparcie\ndecyzyjne",
-    subtitle: "Od briefu po shortlistę i negocjacje",
+    title: "Wsparcie decyzyjne",
+    subtitle:
+      "Od briefu po shortlistę i negocjacje — bez zbędnych kroków i z jasnym procesem.",
   },
 ];
 
@@ -25,24 +28,23 @@ export default function ValueProps() {
         <h2 className="text-2xl md:text-3xl font-bold text-center text-colliers-dark mb-4">
           Nie każda firma potrzebuje tego samego biura
         </h2>
-        <p className="text-colliers-gray text-center max-w-3xl mx-auto mb-14 leading-relaxed">
+        <p className="text-colliers-gray text-center max-w-3xl mx-auto mb-14 leading-relaxed text-sm">
           Biuro flex nie jest jednym produktem. To kilka modeli zajęcia
           przestrzeni — od stanowisk w&nbsp;coworkingu po w pełni wydzielone,
-          brandowane moduły. Dla jednych będzie to rozwiązanie przejściowe, dla
-          innych docelowe. Kluczowe jest dobre dopasowanie: liczby osób, stylu
+          brandowane moduły. Kluczowe jest dobre dopasowanie: liczby osób, stylu
           pracy, oczekiwanej prywatności, horyzontu czasowego i lokalizacji.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {props.map((prop) => (
             <div
               key={prop.title}
               className="bg-colliers-light p-8 text-center"
             >
-              <div className="w-14 h-14 rounded-full bg-colliers-navy/10 flex items-center justify-center mx-auto mb-5">
-                <prop.icon className="w-6 h-6 text-colliers-navy" />
+              <div className="w-16 h-16 rounded-full bg-colliers-navy/10 flex items-center justify-center mx-auto mb-5">
+                <prop.icon className="w-7 h-7 text-colliers-navy" />
               </div>
-              <h3 className="text-lg font-bold text-colliers-dark mb-3 whitespace-pre-line">
+              <h3 className="text-base font-bold text-colliers-dark mb-3">
                 {prop.title}
               </h3>
               <p className="text-sm text-colliers-gray leading-relaxed">

@@ -64,14 +64,14 @@ export default function QuickContact({
             type="text"
             required
             placeholder="Imię i nazwisko *"
-            className="w-full px-4 py-3 border border-colliers-bordertext-sm focus:outline-none focus:border-colliers-navy"
+            className="w-full px-4 py-3 border border-colliers-border text-sm focus:outline-none focus:border-colliers-navy"
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
           />
           <input
             type="text"
             placeholder="Firma"
-            className="w-full px-4 py-3 border border-colliers-bordertext-sm focus:outline-none focus:border-colliers-navy"
+            className="w-full px-4 py-3 border border-colliers-border text-sm focus:outline-none focus:border-colliers-navy"
             value={form.company}
             onChange={(e) => setForm({ ...form, company: e.target.value })}
           />
@@ -82,14 +82,14 @@ export default function QuickContact({
             type="email"
             required
             placeholder="E-mail *"
-            className="w-full px-4 py-3 border border-colliers-bordertext-sm focus:outline-none focus:border-colliers-navy"
+            className="w-full px-4 py-3 border border-colliers-border text-sm focus:outline-none focus:border-colliers-navy"
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
           />
           <input
             type="tel"
             placeholder="Telefon"
-            className="w-full px-4 py-3 border border-colliers-bordertext-sm focus:outline-none focus:border-colliers-navy"
+            className="w-full px-4 py-3 border border-colliers-border text-sm focus:outline-none focus:border-colliers-navy"
             value={form.phone}
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
           />
@@ -99,14 +99,14 @@ export default function QuickContact({
           <input
             type="text"
             placeholder="Miasto"
-            className="w-full px-4 py-3 border border-colliers-bordertext-sm focus:outline-none focus:border-colliers-navy"
+            className="w-full px-4 py-3 border border-colliers-border text-sm focus:outline-none focus:border-colliers-navy"
             value={form.city}
             onChange={(e) => setForm({ ...form, city: e.target.value })}
           />
           <input
             type="number"
             placeholder="Liczba osób"
-            className="w-full px-4 py-3 border border-colliers-bordertext-sm focus:outline-none focus:border-colliers-navy"
+            className="w-full px-4 py-3 border border-colliers-border text-sm focus:outline-none focus:border-colliers-navy"
             value={form.teamSize}
             onChange={(e) => setForm({ ...form, teamSize: e.target.value })}
           />
@@ -115,7 +115,7 @@ export default function QuickContact({
         <textarea
           rows={4}
           placeholder="Np. Warszawa, 12 osób, potrzebujemy własnej przestrzeni od Q3, zależy nam na krótszej umowie i 2 parkingach."
-          className="w-full px-4 py-3 border border-colliers-bordertext-sm focus:outline-none focus:border-colliers-navy resize-none"
+          className="w-full px-4 py-3 border border-colliers-border text-sm focus:outline-none focus:border-colliers-navy resize-none"
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
         />
