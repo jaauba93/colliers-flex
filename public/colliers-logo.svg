@@ -1,9 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 48" fill="none">
-  <!-- COLLIERS text -->
-  <text x="0" y="28" fill="#002855" font-family="'Open Sans', Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="3">COLLIERS</text>
-  <!-- Colored bar line -->
-  <line x1="0" y1="38" x2="30" y2="38" stroke="#E31837" stroke-width="3"/>
-  <line x1="30" y1="38" x2="60" y2="38" stroke="#FFB81C" stroke-width="3"/>
-  <line x1="60" y1="38" x2="90" y2="38" stroke="#00A94F" stroke-width="3"/>
-  <line x1="90" y1="38" x2="120" y2="38" stroke="#0057B8" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 52" fill="none">
+  <defs>
+    <clipPath id="rounded">
+      <rect width="160" height="52" rx="6"/>
+    </clipPath>
+  </defs>
+  <rect width="160" height="52" rx="6" fill="#002855"/>
+  <rect x="0" y="40" width="40" height="12" fill="#E31837" clip-path="url(#rounded)"/>
+  <rect x="40" y="40" width="40" height="12" fill="#FFB81C" clip-path="url(#rounded)"/>
+  <rect x="80" y="40" width="40" height="12" fill="#00A94F" clip-path="url(#rounded)"/>
+  <rect x="120" y="40" width="40" height="12" fill="#0057B8" clip-path="url(#rounded)"/>
+  <text x="80" y="29" text-anchor="middle" fill="white" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="400" letter-spacing="1">Colliers</text>
 </svg>

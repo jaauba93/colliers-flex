@@ -120,6 +120,7 @@ export default function Solutions() {
           <Link
             href="#brief"
             className="inline-block bg-colliers-navy text-white px-8 py-3.5 text-sm font-semibold hover:bg-colliers-blue"
+            style={{ borderRadius: "50px" }}
           >
             Poproś o shortlistę opcji
           </Link>

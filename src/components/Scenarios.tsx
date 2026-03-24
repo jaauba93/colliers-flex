@@ -37,12 +37,12 @@ const scenarios = [
 
 export default function Scenarios() {
   return (
-    <section id="kiedy-flex" className="bg-white py-16 md:py-20">
+    <section id="kiedy-flex" style={{ backgroundColor: "#EAF0FB" }} className="py-16 md:py-20">
       <div className="max-w-[1126px] mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-colliers-dark mb-4">
+        <h2 className="text-2xl md:text-3xl font-light text-center text-colliers-dark mb-4">
           Kiedy flex ma najwięcej sensu?
         </h2>
-        <p className="text-colliers-gray text-center max-w-3xl mx-auto mb-14 leading-relaxed">
+        <p className="text-colliers-gray text-center max-w-3xl mx-auto mb-14 leading-relaxed text-sm">
           Firmy rzadko wybierają flex przypadkowo. Najczęściej robią to wtedy,
           gdy potrzebują szybko uruchomić biuro, ograniczyć ryzyko albo
           dopasować skalę przestrzeni do zmieniającego się zespołu.
@@ -52,11 +52,9 @@ export default function Scenarios() {
           {scenarios.map((s, i) => (
             <div
               key={i}
-              className="bg-colliers-light p-6 flex gap-4"
+              className="bg-white border border-colliers-navy/20 p-8 flex flex-col items-center text-center"
             >
-              <div className="w-12 h-12 rounded-full bg-colliers-navy/10 flex items-center justify-center shrink-0">
-                <s.icon className="w-5 h-5 text-colliers-navy" />
-              </div>
+              <s.icon className="w-12 h-12 text-colliers-navy/70 mb-5" strokeWidth={1} />
               <p className="text-sm text-colliers-dark leading-relaxed">
                 {s.text}
               </p>
@@ -68,6 +66,7 @@ export default function Scenarios() {
           <Link
             href="#brief"
             className="inline-block bg-colliers-navy text-white px-8 py-3.5 text-sm font-semibold hover:bg-colliers-blue"
+            style={{ borderRadius: "50px" }}
           >
             Sprawdź, jaki model pasuje do Twojej firmy
           </Link>
