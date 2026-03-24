@@ -91,7 +91,7 @@ export default function BriefEngine() {
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <button
               onClick={() => setView("configurator")}
-              className="bg-colliers-navy text-white p-8 rounded-lg text-left hover:bg-colliers-blue group cursor-pointer"
+              className="bg-colliers-navy text-white p-8  text-left hover:bg-colliers-blue group cursor-pointer"
             >
               <ClipboardList className="w-8 h-8 mb-4 opacity-80" />
               <h3 className="text-lg font-bold mb-2">Dobierz rozwiązanie</h3>
@@ -104,7 +104,7 @@ export default function BriefEngine() {
 
             <button
               onClick={() => setView("quick")}
-              className="bg-white text-colliers-dark p-8 rounded-lg text-left border border-colliers-border hover:border-colliers-navy group cursor-pointer"
+              className="bg-white text-colliers-dark p-8  text-left border border-colliers-border hover:border-colliers-navy group cursor-pointer"
             >
               <MessageSquare className="w-8 h-8 mb-4 text-colliers-navy opacity-80" />
               <h3 className="text-lg font-bold mb-2">Szybki kontakt</h3>
@@ -140,8 +140,8 @@ export default function BriefEngine() {
       return (
         <section id="brief" className="bg-colliers-light py-16 md:py-20">
           <div className="max-w-2xl mx-auto px-6 text-center">
-            <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="w-16 h-16 rounded-full bg-colliers-navy/10 flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-colliers-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
@@ -169,7 +169,7 @@ export default function BriefEngine() {
               </button>
 
               {top && (
-                <div className="bg-white rounded-lg p-8 border border-colliers-border">
+                <div className="bg-white  p-8 border border-colliers-border">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 rounded-full bg-colliers-navy/10 flex items-center justify-center">
                       <TopIcon className="w-6 h-6 text-colliers-navy" />
@@ -198,7 +198,7 @@ export default function BriefEngine() {
               )}
 
               {/* Contact form */}
-              <form onSubmit={handleSendBrief} className="mt-6 bg-white rounded-lg p-8 border border-colliers-border">
+              <form onSubmit={handleSendBrief} className="mt-6 bg-white  p-8 border border-colliers-border">
                 <h4 className="text-base font-bold text-colliers-dark mb-4">
                   Wyślij brief do doradcy
                 </h4>
@@ -306,7 +306,7 @@ export default function BriefEngine() {
               ))}
             </div>
 
-            <div className="bg-white rounded-lg p-8 border border-colliers-border min-h-[400px]">
+            <div className="bg-white  p-8 border border-colliers-border min-h-[400px]">
               {/* Step 1: Team */}
               {step === 1 && (
                 <div>

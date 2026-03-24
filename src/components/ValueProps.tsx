@@ -37,7 +37,7 @@ export default function ValueProps() {
           {props.map((prop) => (
             <div
               key={prop.title}
-              className="bg-colliers-light rounded-lg p-8 text-center"
+              className="bg-colliers-light p-8 text-center"
             >
               <div className="w-14 h-14 rounded-full bg-colliers-navy/10 flex items-center justify-center mx-auto mb-5">
                 <prop.icon className="w-6 h-6 text-colliers-navy" />

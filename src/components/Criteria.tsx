@@ -37,7 +37,7 @@ export default function Criteria() {
           {criteria.map((c) => (
             <div
               key={c.label}
-              className="bg-colliers-light rounded-lg p-5 flex flex-col items-center text-center gap-3"
+              className="bg-colliers-light p-5 flex flex-col items-center text-center gap-3"
             >
               <c.icon className="w-6 h-6 text-colliers-navy" />
               <span className="text-xs text-colliers-dark leading-relaxed">

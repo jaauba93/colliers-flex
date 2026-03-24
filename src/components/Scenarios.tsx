@@ -52,7 +52,7 @@ export default function Scenarios() {
           {scenarios.map((s, i) => (
             <div
               key={i}
-              className="bg-colliers-light rounded-lg p-6 flex gap-4"
+              className="bg-colliers-light p-6 flex gap-4"
             >
               <div className="w-12 h-12 rounded-full bg-colliers-navy/10 flex items-center justify-center shrink-0">
                 <s.icon className="w-5 h-5 text-colliers-navy" />

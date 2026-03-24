@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin", "latin-ext"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" className={`${inter.variable} antialiased`}>
+    <html lang="pl" className={`${openSans.variable} antialiased`}>
       <body>{children}</body>
     </html>
   );

@@ -40,7 +40,7 @@ export default function Process() {
           {steps.map((step, i) => (
             <div
               key={step.title}
-              className="bg-white rounded-lg p-8 flex gap-6"
+              className="bg-white p-8 flex gap-6"
             >
               <div className="flex flex-col items-center shrink-0">
                 <span className="text-xs font-bold text-colliers-navy mb-2">

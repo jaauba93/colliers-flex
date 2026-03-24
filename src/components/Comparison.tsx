@@ -33,7 +33,7 @@ export default function Comparison() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Flex */}
-          <div className="bg-white rounded-lg p-8 border-2 border-colliers-navy">
+          <div className="bg-white p-8 border-2 border-colliers-navy">
             <h3 className="text-lg font-bold text-colliers-navy mb-6">
               Flex wygrywa, gdy:
             </h3>
@@ -48,7 +48,7 @@ export default function Comparison() {
           </div>
 
           {/* Traditional */}
-          <div className="bg-white rounded-lg p-8 border border-colliers-border">
+          <div className="bg-white p-8 border border-colliers-border">
             <h3 className="text-lg font-bold text-colliers-dark mb-6">
               Najem tradycyjny warto porównać, gdy:
             </h3>

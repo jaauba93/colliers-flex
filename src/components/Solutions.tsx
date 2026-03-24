@@ -59,7 +59,7 @@ export default function Solutions() {
           {solutions.map((sol) => (
             <div
               key={sol.tag}
-              className="bg-white rounded-lg overflow-hidden border border-colliers-border"
+              className="bg-white overflow-hidden border border-colliers-border"
             >
               <div
                 className="h-48 bg-colliers-navy/10"
@@ -89,7 +89,7 @@ export default function Solutions() {
         </div>
 
         {/* Mixed model - full width */}
-        <div className="bg-white rounded-lg overflow-hidden border border-colliers-border md:flex">
+        <div className="bg-white overflow-hidden border border-colliers-border md:flex">
           <div
             className="h-48 md:h-auto md:w-80 bg-colliers-navy/10 shrink-0"
             style={{
