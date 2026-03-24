@@ -4,7 +4,7 @@ const props = [
   {
     icon: SlidersHorizontal,
     title: "Dopasowanie\nmodelu",
-    subtitle: "Nie tylko \u201Eznalezienie biura\u201D, ale wyb\u00F3r w\u0142a\u015Bciwego formatu zaj\u0119cia",
+    subtitle: "Nie tylko znalezienie biura, ale wybór właściwego formatu zajęcia",
   },
   {
     icon: BarChart3,
@@ -13,7 +13,7 @@ const props = [
   },
   {
     icon: Handshake,
-    title: "Wsparcie\ndecyzyjny",
+    title: "Wsparcie\ndecyzyjne",
     subtitle: "Od briefu po shortlistę i negocjacje",
   },
 ];
